@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/corner"
+android:layout_marginBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Spinner
+
+        android:layout_width="match_parent"
+        android:id="@+id/q_type"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    </RelativeLayout>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginBottom="7dp"
+    android:background="@drawable/corner"
+    android:id="@+id/q_major"
+
+    android:hint="@string/major"/>
+    <TextView
+        android:padding="10dp"
+        android:background="@drawable/corner"
+        android:layout_marginBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/q_date"
+        android:hint="@string/date"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/corner"
+        android:layout_marginBottom="7dp"
+        android:id="@+id/q_note"
+        android:hint="@string/note"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/save"/>
+</LinearLayout>

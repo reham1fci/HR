@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimarblue"
+
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:text="@string/personal_data"
+    android:textAllCaps="false"
+    android:id="@+id/personalBtn"
+    android:padding="16dp"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:drawableStart="@drawable/personal"
+    android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/job_data"
+        android:textAllCaps="false"
+        android:id="@+id/job"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableStart="@drawable/job"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/Financial_data"
+        android:textAllCaps="false"
+        android:id="@+id/financial"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableStart="@drawable/financial"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/government_data"
+        android:textAllCaps="false"
+        android:id="@+id/government"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableStart="@drawable/gover"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/documents"
+        android:textAllCaps="false"
+        android:id="@+id/docs"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableStart="@drawable/docs"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/archive"
+        android:textAllCaps="false"
+        android:id="@+id/archive"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableStart="@drawable/archive22"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/family"
+        android:textAllCaps="false"
+        android:id="@+id/family"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableStart="@drawable/fam"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/qualification"
+        android:textAllCaps="false"
+        android:id="@+id/qualification"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableStart="@drawable/archive"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/experience"
+        android:textAllCaps="false"
+        android:id="@+id/exp"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableStart="@drawable/expert"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/edit_login"
+        android:textAllCaps="false"
+        android:id="@+id/edit_login"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableStart="@drawable/edit"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>

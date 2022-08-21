@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:id="@+id/camera"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gallery"
+        android:layout_below="@+id/camera"
+        android:layout_marginStart="-55dp"
+        android:text="@string/gallery"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/camera"
+        android:layout_alignLeft="@+id/camera"
+        android:layout_alignRight="@+id/camera"
+        android:layout_alignStart="@+id/camera"
+        android:layout_below="@+id/camera"
+        android:layout_marginEnd="-59dp"
+        android:layout_marginLeft="-60dp"
+        android:layout_marginRight="-59dp"
+        android:layout_marginStart="-60dp"
+        android:text="@string/camera"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:text="@string/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/cornerbtn"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/cancle" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gallery"
+        android:id="@+id/gallery"
+        android:padding="10dp"
+
+        android:layout_alignTop="@+id/camera"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="61dp"
+        android:layout_marginEnd="61dp" />
+</RelativeLayout>

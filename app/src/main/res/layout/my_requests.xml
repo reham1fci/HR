@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/pendingReq"
+            android:textAllCaps="false"
+
+            android:text="@string/pending_request" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/acceptReq"
+            android:textAllCaps="false"
+
+            android:text="@string/accept_request"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rejectReq"
+            android:textAllCaps="false"
+            android:text="@string/rejected_request"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/loan_request"
+        android:textAllCaps="false"
+        android:id="@+id/loanReq"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/vacation_request"
+        android:textAllCaps="false"
+        android:id="@+id/vacationReq"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/permission_request"
+        android:textAllCaps="false"
+        android:id="@+id/permissionReq"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/custody_request"
+        android:textAllCaps="false"
+        android:id="@+id/custodyReq"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/change_department_request"
+        android:textAllCaps="false"
+        android:id="@+id/changeDepReq"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/another_request"
+        android:textAllCaps="false"
+        android:id="@+id/anotherRequest"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

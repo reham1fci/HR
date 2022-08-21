@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="Employee.infoPkg.info_government">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="526dp"
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/id_data"
+        android:gravity="center"
+       android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="20dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/id_num"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/id_data"
+                 android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/copy_num"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/copy_num"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/release_date"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/release_date"
+       android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+ <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/end_date"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/end_date"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/medical_insurance"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+   <android.support.v7.widget.CardView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:card_view="http://schemas.android.com/apk/res-auto"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       card_view:cardUseCompatPadding="true"
+       card_view:cardCornerRadius="20dp"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:padding="16dp"
+           android:layout_height="wrap_content">
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:orientation="vertical"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:text="@string/insurance_company"
+              android:paddingBottom="10dp"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:layout_width="match_parent"
+              android:text="@string/insurance_category"
+              android:paddingBottom="10dp"
+
+              android:layout_height="wrap_content" />
+          <TextView
+              android:layout_width="match_parent"
+              android:text="@string/insurance_policy"
+              android:paddingBottom="10dp"
+
+              android:layout_height="wrap_content" />
+          <TextView
+              android:layout_width="match_parent"
+              android:text="@string/due_date"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:id="@+id/insurance_company"
+               android:paddingBottom="10dp"
+
+               android:textColor="@color/colorPrimaryDark"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:id="@+id/insurance_category"
+               android:paddingBottom="10dp"
+               android:textColor="@color/colorPrimaryDark"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:id="@+id/insurance_policy"
+               android:paddingBottom="10dp"
+
+               android:textColor="@color/colorPrimaryDark"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:layout_width="wrap_content"
+
+               android:textColor="@color/colorPrimaryDark"
+               android:id="@+id/due_date"
+               android:layout_height="wrap_content" />
+
+
+      </LinearLayout>
+       </LinearLayout>
+
+   </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/passport_data"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+
+        android:layout_height="wrap_content" />
+   <android.support.v7.widget.CardView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:card_view="http://schemas.android.com/apk/res-auto"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       card_view:cardUseCompatPadding="true"
+       card_view:cardCornerRadius="20dp"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:padding="16dp"
+           android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/passport_num"
+        android:paddingBottom="10dp"
+
+        android:layout_height="wrap_content" />
+       <TextView
+           android:layout_width="match_parent"
+           android:text="@string/release_date"
+           android:paddingBottom="10dp"
+
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_width="match_parent"
+           android:text="@string/end_date"
+           android:paddingBottom="10dp"
+
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_width="match_parent"
+           android:text="@string/release_place"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/passport_num"
+        android:paddingBottom="10dp"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/passportRelease_date"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingBottom="10dp"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/passportEnd_date"
+        android:paddingBottom="10dp"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/passport_place"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+       </LinearLayout>
+   </LinearLayout>
+   </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/social_insurance"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+   <android.support.v7.widget.CardView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:card_view="http://schemas.android.com/apk/res-auto"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       card_view:cardUseCompatPadding="true"
+       card_view:cardCornerRadius="20dp"
+       android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:padding="16dp"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/work_office_num"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content" />
+       <TextView
+           android:layout_width="match_parent"
+           android:text="@string/insurance_num"
+           android:paddingBottom="10dp"
+           android:layout_height="wrap_content" />
+       </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+
+    android:layout_height="wrap_content">
+
+
+       <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/work_office_num"
+
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/insurance_num"
+
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+   </LinearLayout>
+   </LinearLayout>
+   </android.support.v7.widget.CardView>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/colorPrimarblue"
+    tools:context=".Employee.Login">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name"
+        android:padding="16dp"
+        android:drawableStart="@drawable/user_icon"
+        android:background="@drawable/corner"
+        android:id="@+id/user_name"/>
+
+
+
+    <EditText
+        android:drawableStart="@drawable/pass1"
+        android:layout_width="match_parent"
+        android:background="@drawable/corner"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:text="******"
+        android:hint="@string/password"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/save"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

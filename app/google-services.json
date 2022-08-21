@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "180736520314",
+    "firebase_url": "https://chat-c8024.firebaseio.com",
+    "project_id": "chat-c8024",
+    "storage_bucket": "chat-c8024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180736520314:android:c791a45b85c264fc",
+        "android_client_info": {
+          "package_name": "com.androidmax.max.hr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180736520314-c4vcl4opf9kg4p8cvatihjmj1uqjo0ea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsM8qM0yhu7F4A0YavVC8xsvhkba4shR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180736520314-c4vcl4opf9kg4p8cvatihjmj1uqjo0ea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180736520314:android:1e03b20297d9c47a3acbc3",
+        "android_client_info": {
+          "package_name": "com.max.rm.hr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180736520314-c4vcl4opf9kg4p8cvatihjmj1uqjo0ea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsM8qM0yhu7F4A0YavVC8xsvhkba4shR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180736520314-c4vcl4opf9kg4p8cvatihjmj1uqjo0ea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180736520314:android:33277423478da541",
+        "android_client_info": {
+          "package_name": "com.rehammokhtar.android.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180736520314-c4vcl4opf9kg4p8cvatihjmj1uqjo0ea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsM8qM0yhu7F4A0YavVC8xsvhkba4shR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180736520314-c4vcl4opf9kg4p8cvatihjmj1uqjo0ea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

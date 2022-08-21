@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/vacation_slice"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/vacSliceSp"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/vacation_day"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/vacNum"
+        android:inputType="number"
+        android:layout_height="wrap_content">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/start_date"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/vacStartDate"
+        android:inputType="number"
+        android:layout_height="wrap_content">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/end_date"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/vacEndDate"
+        android:inputType="number"
+        android:layout_height="wrap_content">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/description"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/description"
+        android:inputType="number"
+        android:layout_height="wrap_content">
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:text="@string/send_request"
+        android:textAllCaps="false"
+        android:id="@+id/sendBtn"
+        android:layout_height="wrap_content" />
+</LinearLayout>

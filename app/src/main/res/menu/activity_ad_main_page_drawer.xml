@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/notification"
+            android:title="@string/notifications" />
+        <item
+            android:id="@+id/allEmployee"
+            android:icon="@drawable/group"
+            android:title="@string/employees" />
+        <item
+            android:id="@+id/attendance"
+            android:icon="@drawable/attend"
+            android:title="@string/attendance" />
+        <item
+            android:id="@+id/payroll"
+            android:icon="@drawable/money"
+            android:title="@string/payroll" />
+        <item
+            android:id="@+id/requests"
+            android:icon="@drawable/request"
+            android:title="@string/requests" />
+    </group>
+
+
+
+</menu>

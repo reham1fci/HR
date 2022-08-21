@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/notification"
+            android:title="@string/notifications" />
+        <item
+            android:id="@+id/myInfo"
+            android:icon="@drawable/info"
+            android:title="@string/info" />
+        <item
+            android:id="@+id/myPayroll"
+            android:icon="@drawable/money"
+            android:title="@string/payroll" />
+        <item
+            android:id="@+id/attendance"
+            android:icon="@drawable/attend"
+            android:title="@string/attendance" />
+        <item
+            android:id="@+id/message"
+            android:icon="@drawable/chat"
+            android:title="@string/messages" />
+        <item
+            android:id="@+id/tasks"
+            android:icon="@drawable/tasks"
+            android:title="@string/tasks" />
+        <item
+            android:id="@+id/requests"
+            android:icon="@drawable/request"
+            android:title="@string/requests" />
+        <item
+            android:id="@+id/complain"
+            android:icon="@drawable/complain"
+            android:title="@string/Complaints_Suggestions" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+  <!--  <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>!-->
+
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/corner"
+        android:padding="16dp"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+         android:hint="@string/exp_years"
+        android:layout_marginBottom="7dp"
+         android:id="@+id/exp_years"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner"
+        android:padding="16dp"
+        android:layout_marginBottom="7dp"
+
+        android:hint="@string/exp_job_title"
+
+        android:id="@+id/job_title"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner"
+        android:padding="16dp"
+        android:layout_marginBottom="7dp"
+
+        android:hint="@string/exp_job_details"
+
+        android:id="@+id/job_details"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="@string/save"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/buttonshape"
+         android:id="@+id/save"/>
+
+</LinearLayout>
