@@ -1,12 +1,12 @@
-package com.androidmax.max.hr.Employee.attendancePkg;
+package com.max.rm.hr.Employee.attendancePkg;
 
 import android.app.Dialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,10 +21,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.androidmax.max.hr.Employee.Api;
-import com.androidmax.max.hr.Employee.RequestInterface;
-import com.androidmax.max.hr.Employee.infoPkg.importatnt;
-import com.androidmax.max.hr.R;
+import com.max.rm.hr.Employee.Api;
+import com.max.rm.hr.Employee.RequestInterface;
+import com.max.rm.hr.Employee.infoPkg.importatnt;
+import com.max.rm.hr.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -152,7 +152,7 @@ public class AttendanceDaily extends Fragment {
                 String n= response.substring(1,response.length()-1);
                 n = n.replaceAll("(\\\\r\\\\n|\\\\|)", "");
                 //  n = n.replaceAll("\\s+","");
-                longInfo(n);
+                //longInfo(n);
                 try {
                     JSONObject object= new JSONObject(n);
                     JSONArray  arr= object.getJSONArray("VW_DAILYATTEND");
@@ -174,7 +174,7 @@ public class AttendanceDaily extends Fragment {
 
                         attend.add( new attendanceDaily_class(date,day,checkIn,checkOut,state,period,String.valueOf(empCode),empName));
                     }
-                    longInfo(attend.toString());
+                    //longInfo(attend.toString());
                     attendanceDailyAdapter adapter= new attendanceDailyAdapter(attend,getActivity());
                     GridLayoutManager lLayout = new GridLayoutManager(getActivity(), 1);
                     attendRc.setLayoutManager(lLayout);
@@ -204,7 +204,7 @@ public class AttendanceDaily extends Fragment {
     public static void longInfo(String str) {
         if(str.length() > 4000) {
             Log.i("taggs", str.substring(0, 4000));
-            longInfo(str.substring(4000));
+            //longInfo(str.substring(4000));
         } else
             Log.i("taggs", str);
     }

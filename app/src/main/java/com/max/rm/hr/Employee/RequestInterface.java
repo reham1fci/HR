@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee;
+package com.max.rm.hr.Employee;
 
 /**
  * Created by Eng.Reham Mokhtar on 28/5

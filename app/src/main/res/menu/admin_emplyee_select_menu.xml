@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:title="@string/info"
+        android:title="@string/emp_info"
         android:id="@+id/empInfo" />
     <item
         android:title="@string/attendance"
@@ -13,5 +13,13 @@
     <item
         android:title="@string/requests"
         android:id="@+id/empRequest"
+        />
+    <item
+        android:title="@string/tasks"
+        android:id="@+id/tasks"
+        />
+    <item
+        android:title="@string/messages"
+        android:id="@+id/chat"
         />
 </menu>

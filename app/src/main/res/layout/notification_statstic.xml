@@ -3,12 +3,19 @@
      android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/colorPrimarblue"
+    android:background="@drawable/backgroundblue"
+    android:elevation="-15dp"
     android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progress"
+        android:layout_height="match_parent" />
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/expired_doc_layout"
         android:gravity="center"
         android:padding="16dp">
 
@@ -32,6 +39,43 @@
             android:background="@drawable/bage_circle"
             android:gravity="center"
             android:paddingEnd="8dp"
+            android:visibility="invisible"
+            android:paddingStart="8dp"
+            android:text="3"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasks_layout"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo"
+            android:paddingTop="8dp"
+            android:text="@string/tasks"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tasks_nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tasks"
+            android:layout_toEndOf="@+id/tasks"
+            android:background="@drawable/bage_circle"
+            android:gravity="center"
+            android:paddingEnd="8dp"
+            android:visibility="invisible"
             android:paddingStart="8dp"
             android:text="3"
             android:textColor="#FFF" />
@@ -41,4 +85,61 @@
         android:layout_width="match_parent"
         android:background="@color/grey"
         android:layout_height="2dp"/>
+
+    <!--<lecho.lib.hellocharts.view.ColumnChartView
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center" />
+    <com.anychart.anychart.AnyChartView
+        android:id="@+id/any_chart_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messages_layout"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo"
+            android:paddingTop="8dp"
+            android:text="@string/messages"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/message_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/message"
+            android:layout_toEndOf="@+id/message"
+            android:background="@drawable/bage_circle"
+            android:gravity="center"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:visibility="invisible"
+            android:text="3"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="gone"
+
+            android:layout_marginBottom="18dp">
+        </com.github.mikephil.charting.charts.BarChart>
+    </RelativeLayout>
 </LinearLayout>

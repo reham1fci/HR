@@ -1,12 +1,12 @@
- package com.androidmax.max.hr.ChatPkg;
+ package com.max.rm.hr.ChatPkg;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import  androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,9 +16,10 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
-import com.androidmax.max.hr.Admin.employeesList;
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.keys;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.max.rm.hr.Admin.employeesList;
+import com.max.rm.hr.R;
+import com.max.rm.hr.keys;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

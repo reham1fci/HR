@@ -1,11 +1,12 @@
-package com.androidmax.max.hr.Employee.infoPkg;
+package com.max.rm.hr.Employee.infoPkg;
 
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.widget.SwipeRefreshLayout;
+import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,11 +18,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.androidmax.max.hr.Employee.Api;
-import com.androidmax.max.hr.Employee.RequestInterface;
-import com.androidmax.max.hr.R;
+import com.max.rm.hr.Employee.Api;
+import com.max.rm.hr.Employee.RequestInterface;
+import com.max.rm.hr.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -171,7 +171,7 @@ public class info_personal extends Fragment implements SwipeRefreshLayout.OnRefr
             @Override
             public void onError() {
                 progress.setVisibility(View.GONE);
-                Toast.makeText(getActivity(), " connection error", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), " connection error", Toast.LENGTH_SHORT).show();
 
             }
         });

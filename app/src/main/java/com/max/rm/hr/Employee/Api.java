@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee;
+package com.max.rm.hr.Employee;
 
 import android.app.Activity;
 import android.util.Log;
@@ -12,7 +12,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.androidmax.max.hr.Employee.infoPkg.info_personal;
+import com.max.rm.hr.Employee.infoPkg.info_personal;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -89,7 +89,7 @@ public class Api {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(activity, "No internet connection", Toast.LENGTH_SHORT).show();
+               Toast.makeText(activity, "No internet connection", Toast.LENGTH_SHORT).show();
                 object.onError();
             }
         }){
@@ -121,7 +121,7 @@ public class Api {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(activity, "No internet connection", Toast.LENGTH_SHORT).show();
+              Toast.makeText(activity, "internet connection problem try again ", Toast.LENGTH_SHORT).show();
 
                 object.onError();
             }
@@ -295,7 +295,7 @@ public class Api {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(activity, "No internet connection", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(activity, "No internet connection", Toast.LENGTH_SHORT).show();
 
                 object.onError();
             }

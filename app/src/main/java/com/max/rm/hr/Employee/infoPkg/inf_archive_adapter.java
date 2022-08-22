@@ -1,14 +1,14 @@
-package com.androidmax.max.hr.Employee.infoPkg;
+package com.max.rm.hr.Employee.infoPkg;
 
 import android.app.Activity;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.R;
+import com.max.rm.hr.R;
 
 import java.util.ArrayList;
 

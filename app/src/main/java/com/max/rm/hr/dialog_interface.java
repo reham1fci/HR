@@ -1,4 +1,4 @@
-package com.androidmax.max.hr;
+package com.max.rm.hr;
 
 import android.app.AlertDialog;
 

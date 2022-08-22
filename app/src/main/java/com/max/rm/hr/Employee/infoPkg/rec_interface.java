@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee.infoPkg;
+package com.max.rm.hr.Employee.infoPkg;
 
 import android.view.View;
 

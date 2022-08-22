@@ -1,20 +1,20 @@
-package com.androidmax.max.hr.Employee.requestpkg;
+package com.max.rm.hr.Employee.requestpkg;
 
 import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.Employee.Api;
-import com.androidmax.max.hr.Employee.RequestInterface;
-import com.androidmax.max.hr.Employee.infoPkg.importatnt;
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.keys;
+import com.max.rm.hr.Employee.Api;
+import com.max.rm.hr.Employee.RequestInterface;
+import com.max.rm.hr.Employee.infoPkg.importatnt;
+import com.max.rm.hr.R;
+import com.max.rm.hr.keys;
 
 import org.json.JSONArray;
 import org.json.JSONException;

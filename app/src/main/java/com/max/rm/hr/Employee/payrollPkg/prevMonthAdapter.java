@@ -1,16 +1,18 @@
-package com.androidmax.max.hr.Employee.payrollPkg;
+package com.max.rm.hr.Employee.payrollPkg;
 
 import android.app.Activity;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.Employee.infoPkg.rec_interface;
-import com.androidmax.max.hr.R;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.max.rm.hr.Employee.infoPkg.rec_interface;
+import com.max.rm.hr.R;
 
 import java.util.ArrayList;
 
@@ -33,13 +35,14 @@ public class prevMonthAdapter  extends RecyclerView.Adapter<prevMonthAdapter.vie
     }
 
     @Override
-    public void onBindViewHolder(prevMonthAdapter.viewHolder holder, final int position) {
+    public void onBindViewHolder(viewHolder holder,  int position) {
         holder.raise.setText(list.get(position).getRaise());
         holder.deduction.setText(list.get(position).getDeduction());
         holder.total.setText(list.get(position).getTotal());
         holder.emp_name.setText(list.get(position).getEmp_name());
         holder.emp_code.setText(list.get(position).getEmp_code());
         holder.date.setText(list.get(position).getDate());
+
         holder.card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

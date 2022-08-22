@@ -1,19 +1,19 @@
-package com.androidmax.max.hr.Admin;
+package com.max.rm.hr.Admin;
 
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -23,21 +23,22 @@ import android.widget.EditText;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.ChatPkg.Employees;
-import com.androidmax.max.hr.ChatPkg.allChats;
-import com.androidmax.max.hr.ChatPkg.chat;
-import com.androidmax.max.hr.Employee.Api;
-import com.androidmax.max.hr.Employee.RequestInterface;
-import com.androidmax.max.hr.Employee.attendancePkg.MyAttendance;
-import com.androidmax.max.hr.Employee.employee_class;
-import com.androidmax.max.hr.Employee.infoPkg.MyInformation;
-import com.androidmax.max.hr.Employee.payrollPkg.MyPayroll;
-import com.androidmax.max.hr.Employee.requestpkg.requestsTypes;
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.dialog_interface;
-import com.androidmax.max.hr.keys;
-import com.androidmax.max.hr.normalWindow;
-import com.androidmax.max.hr.rec_interface2;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.max.rm.hr.ChatPkg.Employees;
+import com.max.rm.hr.ChatPkg.allChats;
+import com.max.rm.hr.ChatPkg.chat;
+import com.max.rm.hr.Employee.Api;
+import com.max.rm.hr.Employee.RequestInterface;
+import com.max.rm.hr.Employee.attendancePkg.MyAttendance;
+import com.max.rm.hr.Employee.employee_class;
+import com.max.rm.hr.Employee.infoPkg.MyInformation;
+import com.max.rm.hr.Employee.payrollPkg.MyPayroll;
+import com.max.rm.hr.Employee.requestpkg.requestsTypes;
+import com.max.rm.hr.R;
+import com.max.rm.hr.dialog_interface;
+import com.max.rm.hr.keys;
+import com.max.rm.hr.normalWindow;
+import com.max.rm.hr.rec_interface2;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 

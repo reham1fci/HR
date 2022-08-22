@@ -1,10 +1,11 @@
-package com.androidmax.max.hr.Admin;
+package com.max.rm.hr.Admin;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,12 +14,12 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.ChatPkg.Employees;
-import com.androidmax.max.hr.ChatPkg.allChats;
-import com.androidmax.max.hr.Employee.Api;
-import com.androidmax.max.hr.Employee.RequestInterface;
-import com.androidmax.max.hr.Employee.infoPkg.info_docs;
-import com.androidmax.max.hr.R;
+import com.max.rm.hr.ChatPkg.Employees;
+import com.max.rm.hr.ChatPkg.allChats;
+import com.max.rm.hr.Employee.Api;
+import com.max.rm.hr.Employee.RequestInterface;
+import com.max.rm.hr.Employee.infoPkg.info_docs;
+import com.max.rm.hr.R;
 import com.github.mikephil.charting.charts.BarChart;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -96,8 +97,9 @@ public class notification extends Fragment {
 
             @Override
             public void onError() {
-                getExpiredDocNum();
-
+             //   getExpiredDocNum();
+                
+progress.setVisibility(View.GONE);
             }
         });
 

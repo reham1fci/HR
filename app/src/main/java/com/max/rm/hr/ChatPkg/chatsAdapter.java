@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.ChatPkg;
+package com.max.rm.hr.ChatPkg;
 
 import android.app.Activity;
 import android.text.format.DateFormat;
@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.R;
+import com.max.rm.hr.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;

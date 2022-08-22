@@ -30,19 +30,26 @@
                 android:orientation="horizontal"
                 android:padding="7dp"
                 android:id="@+id/emp_info_layout"
-                android:background="@color/colorAccent"
+                android:background="@color/grey"
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="emp_name"
+                    android:text="reham"
+                    android:fontFamily="@font/cairo"
                     android:id="@+id/emp_name"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
                     android:layout_weight="1"
                    />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="9101"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/cairo"
                     android:id="@+id/emp_code"
                     />
             </LinearLayout>
@@ -73,7 +80,6 @@
                     android:layout_marginStart="7dp"
                     android:layout_weight="1"
                     android:gravity="center"
-
                     android:layout_height="match_parent">
                     <TextView
                         android:layout_width="match_parent"

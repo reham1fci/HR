@@ -1,15 +1,16 @@
-package com.androidmax.max.hr.Employee;
+package com.max.rm.hr.Employee;
 
 
 import android.app.Dialog;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,14 +20,15 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.androidmax.max.hr.Admin.reminderList;
-import com.androidmax.max.hr.ChatPkg.Employees;
-import com.androidmax.max.hr.ChatPkg.allChats;
-import com.androidmax.max.hr.Employee.infoPkg.info_docs;
-import com.androidmax.max.hr.Employee.payrollPkg.currentMonthAdapter;
-import com.androidmax.max.hr.Employee.payrollPkg.payrollClass;
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.keys;
+import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
+import com.max.rm.hr.Admin.reminderList;
+import com.max.rm.hr.ChatPkg.Employees;
+import com.max.rm.hr.ChatPkg.allChats;
+import com.max.rm.hr.Employee.infoPkg.info_docs;
+import com.max.rm.hr.Employee.payrollPkg.currentMonthAdapter;
+import com.max.rm.hr.Employee.payrollPkg.payrollClass;
+import com.max.rm.hr.R;
+import com.max.rm.hr.keys;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -84,7 +86,7 @@ public class NotificationStatsics  extends Fragment {
         barChart.getAxisRight().setDrawGridLines(false);
         barChart.getAxisLeft().setDrawGridLines(false);
         barChart.getXAxis().setDrawGridLines(false);
-        barChart.setDescription("");
+       // barChart.setDescription("");
         barChart.getLegend().setEnabled(false);
         barChart.getXAxis().setTextColor(Color.WHITE);
         barChart.getXAxis().setTextSize(15);
@@ -191,7 +193,7 @@ get_tasks_numbers();
 
             @Override
             public void onError() {
-                getExpiredDocNum();
+              //  getExpiredDocNum();
 
             }
         });
@@ -292,7 +294,7 @@ get_tasks_numbers();
                         list.add(new BarEntry(raise,0));
                         list.add(new BarEntry(deduction,1));
                         BarDataSet dataSet= new BarDataSet(list,"data");
-                        dataSet.setBarSpacePercent(50f);
+                        dataSet.setBarBorderWidth(50f);
                         int greenColorValue = Color.parseColor("#43bf1d");
                         int redColor = Color.parseColor("#a30924");
                         int[]x= {greenColorValue,redColor};
@@ -300,7 +302,7 @@ get_tasks_numbers();
                         ArrayList<String>names= new ArrayList<>();
                         names.add(getString(R.string.Receivables));
                         names.add(getString(R.string.Deduction));
-                        BarData barData= new BarData(names,dataSet);
+                        BarData barData= new BarData((IBarDataSet) names,dataSet);
                         barData.setValueTextColor(Color.WHITE);
 
                         barData.setValueTextSize(15);

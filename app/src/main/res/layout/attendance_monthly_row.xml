@@ -32,16 +32,23 @@
         android:background="@color/colorAccent"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="emp_name"
+            android:text="reham"
             android:id="@+id/emp_name"
+            android:fontFamily="@font/cairo"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
             android:layout_weight="1"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="9101"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/cairo"
+            android:textStyle="bold"
             android:id="@+id/emp_code"
             />
     </LinearLayout>

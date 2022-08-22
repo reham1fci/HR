@@ -1,14 +1,14 @@
-package com.androidmax.max.hr.Employee.infoPkg;
+package com.max.rm.hr.Employee.infoPkg;
 
 import android.app.Dialog;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,9 +17,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import com.androidmax.max.hr.Employee.Api;
-import com.androidmax.max.hr.Employee.RequestInterface;
-import com.androidmax.max.hr.R;
+import com.max.rm.hr.Employee.Api;
+import com.max.rm.hr.Employee.RequestInterface;
+import com.max.rm.hr.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,7 +27,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import uk.co.senab.photoview.PhotoViewAttacher;
 
 public class info_archive extends Fragment {
     RecyclerView archiveRc;
@@ -98,7 +97,7 @@ public class info_archive extends Fragment {
             @Override
             public void onError() {
                // Log.d("response", "error");
-                viewData();
+               // viewData();
             }
         });
     }
@@ -118,7 +117,8 @@ api.getArchiveImage(org_id, emp_code,archiveId, new RequestInterface() {
                 JSONObject docObj= docs_arr.getJSONObject(i);
                  String image= docObj.getString("ACHIVE_FILE");
                  progressBar.setVisibility(View.GONE);
-                 viewArchiveImage(image);
+
+                 //viewArchiveImage(image);
             }
 
         } catch (JSONException e) {
@@ -135,7 +135,7 @@ api.getArchiveImage(org_id, emp_code,archiveId, new RequestInterface() {
 
      }
       public void viewArchiveImage(String image){
-            Dialog dialog= new Dialog(getActivity());
+         /*   Dialog dialog= new Dialog(getActivity());
              dialog.setContentView( R.layout.info_archive_image);
              ImageView imageView= (ImageView)dialog.findViewById(R.id.image);
              byte[] byte_arr= Base64.decode(image,Base64.DEFAULT);
@@ -144,6 +144,6 @@ api.getArchiveImage(org_id, emp_code,archiveId, new RequestInterface() {
              PhotoViewAttacher pAttacher;
              pAttacher = new PhotoViewAttacher(imageView);
              pAttacher.update();
-             dialog.show();
+             dialog.show();*/
       }
 }

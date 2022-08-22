@@ -1,74 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backgroundblue"
     android:layout_height="match_parent">
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/pendingReq"
-            android:textAllCaps="false"
-
-            android:text="@string/pending_request" />
-        <Button
-            android:layout_width="wrap_content"
-            android:id="@+id/acceptReq"
-            android:textAllCaps="false"
-
-            android:text="@string/accept_request"
-            android:layout_weight="1"
-
-            android:layout_height="wrap_content" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/rejectReq"
-            android:textAllCaps="false"
-            android:text="@string/rejected_request"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <Button
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:id="@+id/loanReqLayout">
+    <TextView
+        android:layout_width="wrap_content"
         android:text="@string/loan_request"
         android:textAllCaps="false"
         android:id="@+id/loanReq"
+        android:fontFamily="@font/cairo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/middle_font_size"
+        android:textStyle="bold"
         android:layout_height="wrap_content" />
-    <Button
+        <TextView
+            android:id="@+id/loanReqNum"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/loanReq"
+            android:layout_marginStart="-8dp"
+            android:layout_toEndOf="@+id/loanReq"
+            android:background="@drawable/bage_circle"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="0"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+    <View
         android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+
+        android:id="@+id/VacationReqLayout">
+    <TextView
+        android:layout_width="wrap_content"
         android:text="@string/vacation_request"
         android:textAllCaps="false"
         android:id="@+id/vacationReq"
+        android:fontFamily="@font/cairo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/middle_font_size"
+        android:textStyle="bold"
+
         android:layout_height="wrap_content" />
-    <Button
+        <TextView
+            android:id="@+id/vacReqNum"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/vacationReq"
+            android:layout_marginStart="-8dp"
+            android:layout_toEndOf="@+id/vacationReq"
+            android:visibility="invisible"
+
+            android:background="@drawable/bage_circle"
+            android:gravity="center"
+
+            android:text="3"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+    <View
         android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+
+        android:id="@+id/permissionReqLayout">
+    <TextView
+        android:layout_width="wrap_content"
         android:text="@string/permission_request"
         android:textAllCaps="false"
         android:id="@+id/permissionReq"
+        android:fontFamily="@font/cairo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/middle_font_size"
+        android:textStyle="bold"
+
         android:layout_height="wrap_content" />
-    <Button
+    <TextView
+        android:id="@+id/permissionReqNum"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/permissionReq"
+        android:layout_marginStart="-8dp"
+        android:layout_toEndOf="@+id/permissionReq"
+        android:visibility="invisible"
+        android:background="@drawable/bage_circle"
+
+        android:gravity="center"
+
+        android:text="3"
+        android:textColor="#FFF" />
+    </RelativeLayout>
+    <View
         android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+
+        android:id="@+id/custdyReqLayout">
+    <TextView
+        android:layout_width="wrap_content"
         android:text="@string/custody_request"
         android:textAllCaps="false"
         android:id="@+id/custodyReq"
+        android:fontFamily="@font/cairo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/middle_font_size"
+        android:textStyle="bold"
         android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/custodyReqNum"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/custodyReq"
+            android:layout_marginStart="-8dp"
+            android:layout_toEndOf="@+id/custodyReq"
+            android:visibility="invisible"
+
+            android:background="@drawable/bage_circle"
+            android:gravity="center"
+
+            android:text="3"
+            android:textColor="#FFF" />
+    </RelativeLayout>    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
     <Button
         android:layout_width="match_parent"
         android:text="@string/change_department_request"
         android:textAllCaps="false"
+        android:fontFamily="@font/cairo"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/middle_font_size"
+        android:textStyle="bold"
+
         android:id="@+id/changeDepReq"
         android:layout_height="wrap_content" />
-    <Button
+    <View
         android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:visibility="gone"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+
+        android:id="@+id/anotherReqLayout">
+    <TextView
+        android:layout_width="wrap_content"
         android:text="@string/another_request"
         android:textAllCaps="false"
         android:id="@+id/anotherRequest"
+        android:fontFamily="@font/cairo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/middle_font_size"
+        android:textStyle="bold"
         android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/anotherRequestNum"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/anotherRequest"
+            android:layout_marginStart="-8dp"
+            android:layout_toEndOf="@+id/anotherRequest"
+            android:background="@drawable/bage_circle"
+            android:gravity="center"
+            android:text="3"
+            android:visibility="invisible"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
 
 </LinearLayout>
+</androidx.core.widget.SwipeRefreshLayout>

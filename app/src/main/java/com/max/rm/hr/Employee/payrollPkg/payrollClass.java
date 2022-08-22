@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee.payrollPkg;
+package com.max.rm.hr.Employee.payrollPkg;
 
 public class payrollClass  {
     String emp_code,emp_name;

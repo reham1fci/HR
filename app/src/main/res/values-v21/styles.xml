@@ -2,9 +2,11 @@
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
+        <item name="android:fontFamily">@font/cairo</item>
+        <item name="android:textStyle">bold</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:icon">@color/colorPrimarblue</item>
+        <item name="android:icon">@color/colorPrimarblue2</item>
 
-        <item name="android:statusBarColor">@color/colorPrimarblue</item>
+        <item name="android:statusBarColor">@color/colorPrimarblue2</item>
     </style>
 </resources>

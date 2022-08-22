@@ -1,14 +1,15 @@
-package com.androidmax.max.hr;
+package com.max.rm.hr;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
 
-import com.androidmax.max.hr.Employee.Login;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.max.rm.hr.Employee.Login;
 
 public class Splash extends AppCompatActivity {
 

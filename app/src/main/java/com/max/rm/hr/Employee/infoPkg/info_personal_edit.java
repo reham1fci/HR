@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee.infoPkg;
+package com.max.rm.hr.Employee.infoPkg;
 
 import android.Manifest;
 import android.app.Dialog;
@@ -10,10 +10,10 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.core.content.ContextCompat;
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,9 +33,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.androidmax.max.hr.Employee.Api;
-import com.androidmax.max.hr.Employee.RequestInterface;
-import com.androidmax.max.hr.R;
+import com.max.rm.hr.Employee.Api;
+import com.max.rm.hr.Employee.RequestInterface;
+import com.max.rm.hr.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -437,8 +437,6 @@ public class info_personal_edit extends Fragment {
            // displayImage(image_txt);
 
         } catch (FileNotFoundException e) {
-            // handle errors
-        } catch (IOException e) {
             // handle errors
         } finally {
             if (parcelFD != null)

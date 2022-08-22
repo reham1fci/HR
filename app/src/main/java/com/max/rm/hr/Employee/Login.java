@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee;
+package com.max.rm.hr.Employee;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,10 +15,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.androidmax.max.hr.Admin.adMainPage;
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.dialog_interface;
-import com.androidmax.max.hr.normalWindow;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.max.rm.hr.Admin.adMainPage;
+import com.max.rm.hr.R;
+import com.max.rm.hr.dialog_interface;
+import com.max.rm.hr.normalWindow;
 
 import org.json.JSONException;
 import org.json.JSONObject;

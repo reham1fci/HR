@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/fabLayout"
+    android:layout_gravity="bottom|end"
+    android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_gravity="bottom|end"
+    android:layout_marginRight="8dp"
+    android:elevation="10dp"
+    android:clickable="true"
+
+    android:layout_marginBottom="20dp"
+    android:layout_marginEnd="8dp"
+    android:id="@+id/oneChat"
+    android:orientation="horizontal"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/cardElevation"
+        app:cardUseCompatPadding="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/cardview_vertical_padding"
+            android:paddingLeft="@dimen/cardview_horizontal_padding"
+            android:paddingRight="@dimen/cardview_horizontal_padding"
+            android:paddingTop="@dimen/cardview_vertical_padding"
+            android:text="@string/chat"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/user_blue"
+        app:backgroundTint="@color/grey"
+        app:elevation="10dp"  />
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/groupChat"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center_vertical"
+android:layout_gravity="bottom|end"
+android:layout_marginRight="8dp"
+android:layout_marginBottom="20dp"
+android:layout_marginEnd="8dp"
+    android:clickable="true"
+
+
+    android:orientation="horizontal"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/grey"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="@dimen/cardElevation"
+    app:cardUseCompatPadding="true" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/cardview_vertical_padding"
+        android:paddingLeft="@dimen/cardview_horizontal_padding"
+        android:paddingRight="@dimen/cardview_horizontal_padding"
+        android:paddingTop="@dimen/cardview_vertical_padding"
+        android:textSize="20sp"
+        android:text="@string/group"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+</android.support.v7.widget.CardView>
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fabSave"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/group_blue"
+
+    app:backgroundTint="@color/grey"
+     />
+
+</LinearLayout>
+</LinearLayout>

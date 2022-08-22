@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee;
+package com.max.rm.hr.Employee;
 
 import java.io.Serializable;
 

@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/groupDetails"
+     android:title="@string/group_details">
 
+</item>
+    <item
+        android:id="@+id/delete"
+        android:title="@string/delete">
+
+    </item>
+    <item
+        android:id="@+id/add_member"
+        android:visible="false"
+        android:title="@string/add_member">
+    </item>
+    <item
+        android:id="@+id/leave"
+        android:title="@string/leave_group">
+
+    </item>
 </menu>

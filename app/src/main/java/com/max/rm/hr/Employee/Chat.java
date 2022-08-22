@@ -1,13 +1,13 @@
-package com.androidmax.max.hr.Employee;
+package com.max.rm.hr.Employee;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.androidmax.max.hr.R;
+import com.max.rm.hr.R;
 
 public class Chat extends Fragment {
     @Nullable

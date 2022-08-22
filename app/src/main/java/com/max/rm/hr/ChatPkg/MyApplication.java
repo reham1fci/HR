@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.ChatPkg;
+package com.max.rm.hr.ChatPkg;
 
 /**
  * Created by lenovo on 11/10/2017.

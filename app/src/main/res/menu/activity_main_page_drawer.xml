@@ -20,10 +20,7 @@
             android:id="@+id/attendance"
             android:icon="@drawable/attend"
             android:title="@string/attendance" />
-        <item
-            android:id="@+id/message"
-            android:icon="@drawable/chat"
-            android:title="@string/messages" />
+
         <item
             android:id="@+id/tasks"
             android:icon="@drawable/tasks"
@@ -35,7 +32,17 @@
         <item
             android:id="@+id/complain"
             android:icon="@drawable/complain"
+            android:visible="false"
             android:title="@string/Complaints_Suggestions" />
+        <item
+            android:id="@+id/admin"
+            android:visible="false"
+            android:icon="@drawable/admin"
+            android:title="@string/Admin" />
+        <item
+            android:id="@+id/message"
+            android:icon="@drawable/chat"
+            android:title="@string/messages" />
         <item
             android:id="@+id/logout"
             android:icon="@drawable/logout"

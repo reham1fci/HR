@@ -13,9 +13,18 @@
             android:icon="@drawable/group"
             android:title="@string/employees" />
         <item
+            android:id="@+id/location"
+            android:visible="false"
+            android:icon="@drawable/group"
+            android:title="@string/employees" />
+        <item
             android:id="@+id/attendance"
             android:icon="@drawable/attend"
             android:title="@string/attendance" />
+        <item
+            android:id="@+id/tasks"
+            android:icon="@drawable/tasks"
+            android:title="@string/tasks" />
         <item
             android:id="@+id/payroll"
             android:icon="@drawable/money"
@@ -24,6 +33,14 @@
             android:id="@+id/requests"
             android:icon="@drawable/request"
             android:title="@string/requests" />
+        <item
+            android:id="@+id/myAccount"
+            android:icon="@drawable/user_icon"
+            android:title="@string/myAccount" />
+        <item
+            android:id="@+id/message"
+            android:icon="@drawable/chat"
+            android:title="@string/messages" />
     </group>
 
 

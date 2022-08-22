@@ -1,34 +1,35 @@
-package com.androidmax.max.hr.Employee;
+package com.max.rm.hr.Employee;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.view.GravityCompat;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.Admin.adMainPage;
-import com.androidmax.max.hr.Admin.reminderList;
-import com.androidmax.max.hr.ChatPkg.allChats;
-import com.androidmax.max.hr.ChatPkg.chat;
-import com.androidmax.max.hr.Employee.attendancePkg.MyAttendance;
-import com.androidmax.max.hr.Employee.infoPkg.MyInformation;
-import com.androidmax.max.hr.Employee.payrollPkg.MyPayroll;
-import com.androidmax.max.hr.Employee.requestpkg.requestsTypes;
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.keys;
+import com.google.android.material.navigation.NavigationView;
+import com.max.rm.hr.Admin.adMainPage;
+import com.max.rm.hr.Admin.reminderList;
+import com.max.rm.hr.ChatPkg.allChats;
+import com.max.rm.hr.ChatPkg.chat;
+import com.max.rm.hr.Employee.attendancePkg.MyAttendance;
+import com.max.rm.hr.Employee.infoPkg.MyInformation;
+import com.max.rm.hr.Employee.payrollPkg.MyPayroll;
+import com.max.rm.hr.Employee.requestpkg.requestsTypes;
+import com.max.rm.hr.R;
+import com.max.rm.hr.keys;
 
 import java.util.Locale;
 

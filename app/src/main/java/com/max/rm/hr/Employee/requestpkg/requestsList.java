@@ -1,14 +1,14 @@
-package com.androidmax.max.hr.Employee.requestpkg;
+package com.max.rm.hr.Employee.requestpkg;
 
 import android.app.AlertDialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -17,14 +17,15 @@ import android.view.ViewGroup;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
-import com.androidmax.max.hr.Employee.Api;
-import com.androidmax.max.hr.Employee.RequestInterface;
-import com.androidmax.max.hr.Employee.infoPkg.importatnt;
-import com.androidmax.max.hr.Employee.infoPkg.rec_interface;
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.dialog_interface;
-import com.androidmax.max.hr.keys;
-import com.androidmax.max.hr.normalWindow;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.max.rm.hr.Employee.Api;
+import com.max.rm.hr.Employee.RequestInterface;
+import com.max.rm.hr.Employee.infoPkg.importatnt;
+import com.max.rm.hr.Employee.infoPkg.rec_interface;
+import com.max.rm.hr.R;
+import com.max.rm.hr.dialog_interface;
+import com.max.rm.hr.keys;
+import com.max.rm.hr.normalWindow;
 
 import org.json.JSONArray;
 import org.json.JSONException;

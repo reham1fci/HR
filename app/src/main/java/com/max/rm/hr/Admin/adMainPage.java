@@ -1,31 +1,34 @@
-package com.androidmax.max.hr.Admin;
+package com.max.rm.hr.Admin;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.util.Log;
 import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.ChatPkg.allChats;
-import com.androidmax.max.hr.Employee.MainPage;
-import com.androidmax.max.hr.Employee.attendancePkg.MyAttendance;
-import com.androidmax.max.hr.Employee.payrollPkg.MyPayroll;
-import com.androidmax.max.hr.Employee.requestpkg.requestsTypes;
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.keys;
+import com.google.android.material.navigation.NavigationView;
+import com.max.rm.hr.ChatPkg.allChats;
+import com.max.rm.hr.Employee.MainPage;
+import com.max.rm.hr.Employee.attendancePkg.MyAttendance;
+import com.max.rm.hr.Employee.payrollPkg.MyPayroll;
+import com.max.rm.hr.Employee.requestpkg.requestsTypes;
+import com.max.rm.hr.R;
+import com.max.rm.hr.keys;
+import com.max.rm.hr.locationLoginMainActivity;
 
 import java.util.Locale;
 
@@ -55,7 +58,7 @@ public class adMainPage extends AppCompatActivity
         //jobDegree.setText(getIntent().getExtras().getString("jobDegree"));
         String empName= getSharedPreferences("user",0).getString("name","");
         emp_name.setText(empName);
-       manger = getSupportFragmentManager();
+         manger = getSupportFragmentManager();
         FragmentTransaction transaction=manger.beginTransaction();
         Fragment f=new notification();
         transaction.replace(R.id.frame,f);
@@ -115,6 +118,11 @@ public class adMainPage extends AppCompatActivity
         Configuration config = new Configuration();
         config.locale = locale;
         getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        finishAffinity();
+
+        Intent i = getBaseContext().getPackageManager()
+                .getLaunchIntentForPackage( getBaseContext().getPackageName() );
+        startActivity(i);
     }
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -199,6 +207,10 @@ public class adMainPage extends AppCompatActivity
             transaction.replace(R.id.frame,f,"MyPayroll");
             transaction.addToBackStack("MyPayroll") ;
             transaction.commit();
+        }
+         else if ( id == R.id.location){
+            Intent i = new Intent(getApplicationContext(), locationLoginMainActivity.class);
+              startActivity(i );
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

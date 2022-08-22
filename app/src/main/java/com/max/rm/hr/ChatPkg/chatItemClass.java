@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.ChatPkg;
+package com.max.rm.hr.ChatPkg;
 
 public class chatItemClass extends chatInfo {
    // String name;

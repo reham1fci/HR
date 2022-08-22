@@ -1,10 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <android.support.v7.widget.RecyclerView
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:id="@+id/payrollPrevMonthList"
-        android:layout_height="match_parent">
-    </android.support.v7.widget.RecyclerView>
-</android.support.constraint.ConstraintLayout>
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="20dp"
+        android:id="@+id/card"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:gravity="center"
+                android:id="@+id/emp_info_layout"
+                android:background="@color/grey"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="emp_name"
+                    android:fontFamily="@font/cairo"
+                    android:id="@+id/emp_name"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9101"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/cairo"
+                    android:id="@+id/emp_code"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="sunday-4/1/2018"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:background="@color/grey"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/date"
+                android:layout_height="wrap_content" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:padding="10dp"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text="@string/Receivables"
+                       android:drawableStart="@drawable/up"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text="@string/Deduction"
+                       android:drawableStart="@drawable/down"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text="@string/total"
+                       android:drawableStart="@drawable/total"
+
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="vertical"
+                   android:gravity="center"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:id="@+id/raise"
+                       android:text="500"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:id="@+id/deduction"
+                       android:layout_weight="1"
+
+                       android:text="500"
+
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:id="@+id/total"
+                       android:layout_weight="1"
+
+                       android:text="500"
+
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+           </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</androidx.constraintlayout.ConstraintLayout>

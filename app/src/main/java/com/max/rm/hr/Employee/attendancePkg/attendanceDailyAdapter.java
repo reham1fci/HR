@@ -1,8 +1,8 @@
-package com.androidmax.max.hr.Employee.attendancePkg;
+package com.max.rm.hr.Employee.attendancePkg;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.R;
+import com.max.rm.hr.R;
 
 import java.util.ArrayList;
 

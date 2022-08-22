@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Admin;
+package com.max.rm.hr.Admin;
 
 import java.io.Serializable;
 

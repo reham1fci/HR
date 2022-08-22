@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.ChatPkg;
+package com.max.rm.hr.ChatPkg;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -7,10 +7,12 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
-import android.support.v7.app.NotificationCompat;
-import com.androidmax.max.hr.Employee.MainPage;
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.keys;
+
+import androidx.core.app.NotificationCompat;
+
+import com.max.rm.hr.Employee.MainPage;
+import com.max.rm.hr.R;
+import com.max.rm.hr.keys;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import java.util.Map;

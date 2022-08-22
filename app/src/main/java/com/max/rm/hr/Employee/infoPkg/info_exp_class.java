@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee.infoPkg;
+package com.max.rm.hr.Employee.infoPkg;
 
 public class info_exp_class {
     String job_name, job_details, job_years,record_id;

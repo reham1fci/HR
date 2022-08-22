@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee.attendancePkg;
+package com.max.rm.hr.Employee.attendancePkg;
 
 public class attendanceDaily_class {
     String date;

@@ -2,7 +2,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/colorPrimarblue"
+    android:background="@drawable/backgroundblue"
 
     android:layout_height="match_parent">
 <LinearLayout
@@ -14,9 +14,12 @@
     android:text="@string/personal_data"
     android:textAllCaps="false"
     android:id="@+id/personalBtn"
-    android:padding="16dp"
+    android:padding="15dp"
     android:textColor="@color/white"
     android:gravity="center"
+    android:textSize="@dimen/middle_font_size"
+    android:fontFamily="@font/cairo"
+    android:textStyle="bold"
     android:drawableStart="@drawable/personal"
     android:layout_height="wrap_content" />
     <View
@@ -28,21 +31,29 @@
         android:text="@string/job_data"
         android:textAllCaps="false"
         android:id="@+id/job"
-        android:padding="16dp"
+        android:padding="15dp"
         android:textColor="@color/white"
         android:gravity="center"
+        android:textSize="@dimen/middle_font_size"
+        android:fontFamily="@font/cairo"
+        android:textStyle="bold"
         android:drawableStart="@drawable/job"
         android:layout_height="wrap_content" />
     <View
         android:layout_width="match_parent"
         android:background="@color/grey"
+
         android:layout_height="2dp"/>
     <TextView
         android:layout_width="match_parent"
         android:text="@string/Financial_data"
         android:textAllCaps="false"
+        android:textSize="@dimen/middle_font_size"
+        android:fontFamily="@font/cairo"
+        android:textStyle="bold"
         android:id="@+id/financial"
-        android:padding="16dp"
+        android:padding="15dp"
+
         android:textColor="@color/white"
         android:gravity="center"
         android:drawableStart="@drawable/financial"
@@ -56,7 +67,10 @@
         android:text="@string/government_data"
         android:textAllCaps="false"
         android:id="@+id/government"
-        android:padding="16dp"
+        android:padding="15dp"
+        android:textSize="@dimen/middle_font_size"
+        android:fontFamily="@font/cairo"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:gravity="center"
         android:drawableStart="@drawable/gover"
@@ -70,9 +84,12 @@
         android:text="@string/documents"
         android:textAllCaps="false"
         android:id="@+id/docs"
-        android:padding="16dp"
+        android:padding="15dp"
         android:textColor="@color/white"
         android:gravity="center"
+        android:textSize="@dimen/middle_font_size"
+        android:fontFamily="@font/cairo"
+        android:textStyle="bold"
         android:drawableStart="@drawable/docs"
         android:layout_height="wrap_content" />
     <View
@@ -84,9 +101,12 @@
         android:text="@string/archive"
         android:textAllCaps="false"
         android:id="@+id/archive"
-        android:padding="16dp"
+        android:padding="15dp"
         android:textColor="@color/white"
         android:gravity="center"
+        android:textSize="@dimen/middle_font_size"
+        android:fontFamily="@font/cairo"
+        android:textStyle="bold"
         android:drawableStart="@drawable/archive22"
         android:layout_height="wrap_content" />
     <View
@@ -98,9 +118,12 @@
         android:text="@string/family"
         android:textAllCaps="false"
         android:id="@+id/family"
-        android:padding="16dp"
+        android:padding="15dp"
         android:textColor="@color/white"
         android:gravity="center"
+        android:textSize="@dimen/middle_font_size"
+        android:fontFamily="@font/cairo"
+        android:textStyle="bold"
         android:drawableStart="@drawable/fam"
         android:layout_height="wrap_content" />
     <View
@@ -112,9 +135,12 @@
         android:text="@string/qualification"
         android:textAllCaps="false"
         android:id="@+id/qualification"
-        android:padding="16dp"
+        android:padding="15dp"
         android:textColor="@color/white"
         android:gravity="center"
+        android:textSize="@dimen/middle_font_size"
+        android:fontFamily="@font/cairo"
+        android:textStyle="bold"
         android:drawableStart="@drawable/archive"
         android:layout_height="wrap_content" />
     <View
@@ -126,7 +152,10 @@
         android:text="@string/experience"
         android:textAllCaps="false"
         android:id="@+id/exp"
-        android:padding="16dp"
+        android:padding="15dp"
+        android:textSize="@dimen/middle_font_size"
+        android:fontFamily="@font/cairo"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:gravity="center"
         android:drawableStart="@drawable/expert"
@@ -140,7 +169,10 @@
         android:text="@string/edit_login"
         android:textAllCaps="false"
         android:id="@+id/edit_login"
-        android:padding="16dp"
+        android:padding="15dp"
+        android:textSize="@dimen/middle_font_size"
+        android:fontFamily="@font/cairo"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:gravity="center"
         android:drawableStart="@drawable/edit"

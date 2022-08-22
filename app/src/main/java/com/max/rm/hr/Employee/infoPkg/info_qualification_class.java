@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee.infoPkg;
+package com.max.rm.hr.Employee.infoPkg;
 
 public class info_qualification_class  {
  String   qualification_name,qualification_date,qualification_major,qualification_note,q_id;

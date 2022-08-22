@@ -1,9 +1,8 @@
-package com.androidmax.max.hr.Admin;
+package com.max.rm.hr.Admin;
 
 import android.app.Activity;
 import android.graphics.Color;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,10 +12,14 @@ import android.widget.Filter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.androidmax.max.hr.Employee.employee_class;
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.androidmax.max.hr.R;
-import com.androidmax.max.hr.rec_interface2;
+import com.max.rm.hr.Employee.employee_class;
+
+import com.max.rm.hr.R;
+import com.max.rm.hr.rec_interface2;
 
 import java.util.ArrayList;
 
@@ -44,7 +47,7 @@ public class empListAdapter  extends RecyclerView.Adapter<empListAdapter.viewHol
     }
 
     @Override
-    public void onBindViewHolder(empListAdapter.viewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         holder.job_name.setText(empList.get(position).getJob_name());
         holder.emp_name.setText(empList.get(position).getNameAr());
         holder.emp_code.setText(empList.get(position).getEMP_CODE());
@@ -54,28 +57,30 @@ public class empListAdapter  extends RecyclerView.Adapter<empListAdapter.viewHol
                 if(employeesList.type.equals("group")){
 
                     if (selectedItem.contains(position)){
-                    selectedItem.remove(Integer.valueOf(position));
-                }
-                else {
-                    selectedItem.add(position);
-                }
-                 row_index=position;
+                        selectedItem.remove(Integer.valueOf(position));
+                    }
+                    else {
+                        selectedItem.add(position);
+                    }
+                    row_index=position;
 
-                  notifyDataSetChanged();
+                    notifyDataSetChanged();
                 }
                 rec_interface.onRecItemSelected(position,view,empList);
             }
         });
         if(employeesList.type.equals("group")){
-        if(selectedItem.contains(position)){
-            holder.select.setBackgroundColor(Color.parseColor("#3878bc"));
-        }
-         else {
-            holder.select.setBackgroundColor(Color.parseColor("#ffffff"));
+            if(selectedItem.contains(position)){
+                holder.select.setBackgroundColor(Color.parseColor("#3878bc"));
+            }
+            else {
+                holder.select.setBackgroundColor(Color.parseColor("#ffffff"));
 
-        }
+            }
         }
     }
+
+
 
     @Override
     public int getItemCount() {

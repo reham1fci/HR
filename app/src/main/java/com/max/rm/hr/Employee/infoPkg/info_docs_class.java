@@ -1,4 +1,4 @@
-package com.androidmax.max.hr.Employee.infoPkg;
+package com.max.rm.hr.Employee.infoPkg;
 
 public class info_docs_class {
     String doc_Name, docExpireDate, docReleaseDate ; int exp_after;

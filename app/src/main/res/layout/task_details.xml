@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     android:orientation="vertical"
-    android:background="@drawable/blue_background"
+    android:background="@drawable/backgroundblue"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/start_date_txt"
+                    android:id="@+id/date_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
@@ -118,6 +118,7 @@
                     android:gravity="center"
                     android:padding="7dp"
                     android:text="@string/date"
+
                     android:textColor="@color/colorPrimarblue"
                     android:textSize="@dimen/default_font_size"
                     android:textStyle="bold" />
@@ -156,6 +157,7 @@
                     android:gravity="center"
                     android:background="@color/grey"
                     android:text="@string/time"
+                    android:id="@+id/time_txt"
                     android:layout_height="wrap_content" />
 
                 <TextView
@@ -209,6 +211,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:id="@+id/repeatLayout"
             android:orientation="horizontal">
 
             <CheckBox
